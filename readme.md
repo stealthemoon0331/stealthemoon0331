@@ -10,9 +10,9 @@
 
 
 **AI-Focused Full Stack Developer** with 7+ years of experience building scalable, data-driven web and mobile
-applications. Skilled in React, Node.js, Django, Laravel, and GraphQL, with hands-on expertise integrating AI/ML models using
-TensorFlow and PyTorch. Delivered intelligent features like personalized recommendation engines that boosted engagement by
-25%. Experienced in developing cross-platform mobile apps with React Native and Flutter. Delivered intelligent features such as
+applications. Skilled in **React**, **Node.js**, **Django**, **Laravel**, and **GraphQL**, with hands-on expertise integrating **AI/ML** models using
+**TensorFlow** and **PyTorch**. Delivered intelligent features like personalized recommendation engines that boosted engagement by
+25%. Experienced in developing cross-platform mobile apps with **React Native** and **Flutter**. Delivered intelligent features such as
 personalized recommendation engines that boosted engagement by 26%. Passionate about clean architecture, mentoring teams, and bringing cutting-edge technologies—AI, cloud, and decentralized systems—into practical, user-centric solutions.
 
 ## 🛠️ Tech Stack
