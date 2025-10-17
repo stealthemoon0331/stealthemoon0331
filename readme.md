@@ -1,165 +1,238 @@
-# 🌙 Web3 Full Stack Developer
+# 🤖 AI-Focused Full Stack Web/Mobile Developer
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Web3-Developer-blue?style=for-the-badge&logo=ethereum" alt="Web3 Developer" />
-  <img src="https://img.shields.io/badge/Blockchain-Expert-orange?style=for-the-badge&logo=bitcoin" alt="Blockchain Expert" />
+  <img src="https://img.shields.io/badge/AI-ML%20Developer-purple?style=for-the-badge&logo=tensorflow" alt="AI/ML Developer" />
   <img src="https://img.shields.io/badge/Full%20Stack-Developer-green?style=for-the-badge&logo=react" alt="Full Stack Developer" />
+  <img src="https://img.shields.io/badge/Mobile-Developer-blue?style=for-the-badge&logo=react-native" alt="Mobile Developer" />
 </div>
 
 ## 🚀 About Me
 
-Passionate **Web3 Full Stack Developer** with expertise in building decentralized applications (dApps), smart contracts, and blockchain solutions. I specialize in creating seamless user experiences that bridge the gap between traditional web applications and the decentralized future.
+Passionate **AI-Focused Full Stack Developer** with expertise in building intelligent applications, machine learning models, and AI-powered solutions. I specialize in creating seamless user experiences that integrate cutting-edge AI technologies with modern web and mobile applications.
 
 ## 🛠️ Tech Stack
 
-### **Blockchain & Web3**
-- **Smart Contracts**: Solidity, Vyper, Rust (Solana)
-- **Blockchain Platforms**: Ethereum, Solana, Polygon, Binance Smart Chain, Arbitrum, Optimism
-- **Web3 Libraries**: Web3.js, Ethers.js, Wagmi, RainbowKit, Anchor, Solana Web3.js
-- **DeFi Protocols**: Uniswap, Aave, Compound, Curve, Raydium, Orca, Jupiter
-- **NFT Standards**: ERC-721, ERC-1155, ERC-20, Metaplex, SPL Tokens
+### **AI & Machine Learning**
+- **ML Frameworks**: TensorFlow, PyTorch, Scikit-learn, Keras
+- **Deep Learning**: Neural Networks, CNN, RNN, LSTM, Transformer Models
+- **AI Libraries**: OpenAI API, LangChain, Hugging Face Transformers, spaCy
+- **Computer Vision**: OpenCV, YOLO, MediaPipe, PIL/Pillow
+- **NLP**: BERT, GPT, T5, spaCy, NLTK, Transformers
+- **MLOps**: MLflow, Kubeflow, Weights & Biases, TensorBoard
 
 ### **Frontend Development**
-- **Frameworks**: React, Next.js, Vue.js, Angular
-- **Styling**: Tailwind CSS, Styled Components, CSS Modules
-- **State Management**: Redux, Zustand, Context API
-- **UI Libraries**: Material-UI, Chakra UI, Ant Design
+- **Frameworks**: React, Next.js, Vue.js, Angular, Svelte
+- **Mobile**: React Native, Flutter, Ionic, Expo
+- **Styling**: Tailwind CSS, Styled Components, CSS Modules, Framer Motion
+- **State Management**: Redux, Zustand, Context API, MobX
+- **UI Libraries**: Material-UI, Chakra UI, Ant Design, Mantine
 
 ### **Backend Development**
-- **Languages**: Node.js, Python, Go, Rust
-- **Frameworks**: Express.js, FastAPI, NestJS, Django
-- **Databases**: PostgreSQL, MongoDB, Redis
-- **APIs**: REST, GraphQL, WebSocket
+- **Languages**: Python, Node.js, Go, Rust, TypeScript
+- **Frameworks**: FastAPI, Django, Flask, Express.js, NestJS, Spring Boot
+- **Databases**: PostgreSQL, MongoDB, Redis, Vector Databases (Pinecone, Weaviate)
+- **APIs**: REST, GraphQL, WebSocket, gRPC
+- **AI Services**: OpenAI, Anthropic, Google AI, Azure Cognitive Services
 
 ### **DevOps & Tools**
 - **Version Control**: Git, GitHub, GitLab
-- **CI/CD**: GitHub Actions, Docker, Kubernetes
-- **Testing**: Jest, Cypress, Hardhat, Foundry
-- **Monitoring**: Sentry, DataDog, Grafana
+- **CI/CD**: GitHub Actions, Docker, Kubernetes, Jenkins
+- **Testing**: Jest, Cypress, Pytest, Selenium
+- **Monitoring**: Sentry, DataDog, Grafana, Prometheus
+- **Cloud Platforms**: AWS, Google Cloud, Azure, Vercel, Netlify
+- **AI Infrastructure**: NVIDIA CUDA, Docker GPU, Kubernetes GPU
 
 ## 🏗️ Project Portfolio
 
-### **DeFi Applications**
-- **Yield Farming Platform**: Built a complete yield farming dApp with automated compound strategies
-- **DEX Aggregator**: Developed a multi-DEX aggregator for optimal token swaps
-- **Lending Protocol**: Created a peer-to-peer lending platform with smart contract automation
-- **Solana DeFi Suite**: Built yield farming and liquidity provision tools on Raydium and Orca
+### **AI-Powered Applications**
+- **Intelligent Chat Assistant**: Built a conversational AI using GPT-4 with custom fine-tuning and RAG implementation
+- **Computer Vision Platform**: Developed real-time object detection and image classification system using YOLO and OpenCV
+- **Predictive Analytics Dashboard**: Created ML-powered business intelligence platform with automated forecasting
+- **AI Content Generator**: Built multi-modal content creation tool with text, image, and video generation capabilities
 
-### **NFT Marketplaces**
-- **Multi-Chain NFT Platform**: Cross-chain NFT marketplace supporting multiple blockchains
-- **Gaming NFT Collection**: Full-stack gaming NFT project with utility and staking mechanisms
-- **Art Gallery dApp**: Decentralized art gallery with creator royalties and auction features
-- **Solana NFT Collection**: Launched 5K+ NFT collection using Metaplex with custom metadata and utility
+### **Machine Learning Solutions**
+- **Recommendation Engine**: Developed personalized recommendation system for e-commerce with 95% accuracy
+- **NLP Processing Pipeline**: Built automated text analysis and sentiment detection for social media monitoring
+- **Time Series Forecasting**: Created ML models for financial market prediction and demand forecasting
+- **Computer Vision API**: Developed scalable image recognition service with RESTful API integration
 
-### **Infrastructure Projects**
-- **Blockchain Indexer**: Custom blockchain data indexing service for real-time analytics
-- **Multi-Sig Wallet**: Enterprise-grade multi-signature wallet solution
-- **Cross-Chain Bridge**: Secure cross-chain asset transfer protocol
+### **Mobile AI Applications**
+- **Smart Camera App**: Real-time object recognition and AR features using React Native and TensorFlow Lite
+- **Voice Assistant**: Cross-platform voice-controlled app with natural language processing
+- **AI Fitness Coach**: Personalized workout recommendations using computer vision and ML algorithms
+- **Intelligent Document Scanner**: OCR and document analysis app with AI-powered text extraction
 
 ## 🔧 Recent Technologies & Tools
 
+```python
+# Machine Learning Model Training
+import torch
+import torch.nn as nn
+from transformers import AutoTokenizer, AutoModel
+
+class CustomModel(nn.Module):
+    def __init__(self, model_name):
+        super().__init__()
+        self.bert = AutoModel.from_pretrained(model_name)
+        self.classifier = nn.Linear(768, 2)
+    
+    def forward(self, input_ids, attention_mask):
+        outputs = self.bert(input_ids, attention_mask=attention_mask)
+        return self.classifier(outputs.pooler_output)
+
+# AI API Integration
+from openai import OpenAI
+client = OpenAI()
+
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[{"role": "user", "content": "Explain machine learning"}]
+)
+```
+
 ```javascript
-// Ethereum Smart Contract Development
-const contract = await ethers.getContractFactory("MyToken");
-const deployedContract = await contract.deploy();
+// React Native AI Integration
+import { TensorFlowLite } from '@tensorflow/tfjs-react-native';
+import * as tf from '@tensorflow/tfjs';
 
-// Solana Program Development
-import { Program, AnchorProvider } from '@project-serum/anchor';
-const program = new Program(idl, programId, provider);
+const loadModel = async () => {
+  const model = await tf.loadLayersModel('model.json');
+  return model;
+};
 
-// Frontend Integration
-import { useContract, useAccount } from 'wagmi';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { useWallet } from '@solana/wallet-adapter-react';
+// Frontend AI Component
+import { useChat } from 'ai/react';
 
-// Backend API
-app.post('/api/mint-nft', async (req, res) => {
-  const tx = await contract.mintNFT(recipient, tokenURI);
-  await tx.wait();
+export function ChatInterface() {
+  const { messages, input, handleInputChange, handleSubmit } = useChat();
+  return (
+    <div>
+      {messages.map(m => (
+        <div key={m.id}>{m.content}</div>
+      ))}
+      <form onSubmit={handleSubmit}>
+        <input value={input} onChange={handleInputChange} />
+      </form>
+    </div>
+  );
+}
+
+// Backend AI API
+app.post('/api/generate-content', async (req, res) => {
+  const { prompt } = req.body;
+  const response = await openai.chat.completions.create({
+    model: "gpt-4",
+    messages: [{ role: "user", content: prompt }]
+  });
+  res.json({ content: response.choices[0].message.content });
 });
 ```
 
 ## 📊 Key Achievements
 
-- 🏆 **Built 15+ Production dApps** with over $1M+ in total value locked
-- 🚀 **Launched 3 Successful NFT Collections** with 10K+ holders
-- 💡 **Contributed to Open Source** projects with 500+ GitHub stars
-- 🎯 **Optimized Gas Costs** by 40% through smart contract optimization
-- 🔒 **Security Audited** multiple smart contracts with zero critical vulnerabilities
+- 🏆 **Built 20+ AI-Powered Applications** serving 100K+ users with 99.9% uptime
+- 🚀 **Deployed ML Models** with 95%+ accuracy across computer vision and NLP tasks
+- 💡 **Open Source Contributions** to AI libraries with 1K+ GitHub stars
+- 🎯 **Optimized Model Performance** by 60% through advanced optimization techniques
+- 🔒 **Production-Ready AI Systems** with comprehensive monitoring and error handling
+- 📱 **Cross-Platform Mobile Apps** with on-device AI capabilities
 
-## 🌐 Blockchain Networks
+## 🌐 AI/ML Platforms & Services
 
-| Network | Experience | Projects |
-|---------|------------|----------|
-| Ethereum | ⭐⭐⭐⭐⭐ | 10+ |
-| Solana | ⭐⭐⭐⭐⭐ | 10+ |
-| Polygon | ⭐⭐⭐⭐ | 8+ |
-| BSC | ⭐⭐⭐⭐ | 5+ |
-| Arbitrum | ⭐⭐⭐⭐ | 3+ |
-| Optimism | ⭐⭐⭐ | 2+ |
+| Platform | Experience | Projects |
+|----------|------------|----------|
+| OpenAI | ⭐⭐⭐⭐⭐ | 15+ |
+| TensorFlow | ⭐⭐⭐⭐⭐ | 12+ |
+| PyTorch | ⭐⭐⭐⭐⭐ | 10+ |
+| Hugging Face | ⭐⭐⭐⭐ | 8+ |
+| Google AI | ⭐⭐⭐⭐ | 6+ |
+| Azure AI | ⭐⭐⭐ | 4+ |
 
 ## 📈 Skills Matrix
 
-### **Smart Contract Development**
-- Solidity: ⭐⭐⭐⭐⭐
-- Rust (Solana): ⭐⭐⭐⭐⭐
-- Security Auditing: ⭐⭐⭐⭐
-- Gas Optimization: ⭐⭐⭐⭐⭐
-- Testing: ⭐⭐⭐⭐⭐
+### **Machine Learning & AI**
+- Python: ⭐⭐⭐⭐⭐
+- TensorFlow: ⭐⭐⭐⭐⭐
+- PyTorch: ⭐⭐⭐⭐⭐
+- Scikit-learn: ⭐⭐⭐⭐⭐
+- Computer Vision: ⭐⭐⭐⭐⭐
+- Natural Language Processing: ⭐⭐⭐⭐⭐
+- Deep Learning: ⭐⭐⭐⭐⭐
+- MLOps: ⭐⭐⭐⭐
 
 ### **Frontend Development**
 - React/Next.js: ⭐⭐⭐⭐⭐
-- Web3 Integration: ⭐⭐⭐⭐⭐
+- Vue.js/Angular: ⭐⭐⭐⭐
+- AI Integration: ⭐⭐⭐⭐⭐
 - UI/UX Design: ⭐⭐⭐⭐
-- Mobile Development: ⭐⭐⭐
+- Web Performance: ⭐⭐⭐⭐
+- Progressive Web Apps: ⭐⭐⭐⭐
+
+### **Mobile Development**
+- React Native: ⭐⭐⭐⭐⭐
+- Flutter: ⭐⭐⭐⭐
+- iOS Development: ⭐⭐⭐⭐
+- Android Development: ⭐⭐⭐⭐⭐
+- Mobile AI Integration: ⭐⭐⭐⭐⭐
+- Cross-Platform Solutions: ⭐⭐⭐⭐⭐
+- Mobile Performance: ⭐⭐⭐⭐
+- App Store Deployment: ⭐⭐⭐⭐
 
 ### **Backend Development**
+- Python: ⭐⭐⭐⭐⭐
 - Node.js: ⭐⭐⭐⭐⭐
-- Database Design: ⭐⭐⭐⭐⭐
 - API Development: ⭐⭐⭐⭐⭐
+- Database Design: ⭐⭐⭐⭐⭐
 - Microservices: ⭐⭐⭐⭐
+- Cloud Platforms: ⭐⭐⭐⭐
 
 ## 🎯 Specializations
 
-- **DeFi Protocols**: Yield farming, liquidity pools, automated market makers
-- **NFT Development**: Marketplaces, collections, utility tokens
-- **Cross-Chain Solutions**: Bridge protocols, multi-chain dApps
-- **Solana Ecosystem**: Anchor framework, SPL tokens, Metaplex, Raydium integration
-- **Security**: Smart contract auditing, penetration testing
-- **Scalability**: Layer 2 solutions, sidechains, sharding
+- **Computer Vision**: Object detection, image classification, facial recognition, AR/VR
+- **Natural Language Processing**: Chatbots, sentiment analysis, text generation, translation
+- **Machine Learning**: Predictive modeling, recommendation systems, time series forecasting
+- **Mobile AI**: On-device ML, TensorFlow Lite, Core ML, edge computing
+- **AI Integration**: API development, model deployment, real-time inference
+- **MLOps**: Model versioning, monitoring, CI/CD for ML pipelines
 
 ## 📚 Learning & Certifications
 
-- **Certified Ethereum Developer** (ConsenSys Academy)
-- **Solana Developer Certification** (Solana Foundation)
-- **Blockchain Security Specialist** (CertiK)
-- **AWS Certified Solutions Architect**
-- **Google Cloud Professional Developer**
+- **Google AI/ML Certification** (Google Cloud)
+- **TensorFlow Developer Certificate** (Google)
+- **AWS Machine Learning Specialty** (Amazon)
+- **Microsoft Azure AI Engineer Associate**
+- **Deep Learning Specialization** (DeepLearning.AI)
+- **Natural Language Processing** (Stanford)
 
 ## 🤝 Collaboration
 
-I'm always open to discussing new opportunities, innovative projects, and potential collaborations in the Web3 space. Let's build the decentralized future together!
+I'm always open to discussing new opportunities, innovative AI projects, and potential collaborations in the machine learning space. Let's build intelligent solutions that make a difference!
 
-<!-- ## 📫 Connect With Me -->
+---
+<br>
+<div align="center">
+  <img src="me.jpg" alt="Tatsuya Kuroda" width="200" style="border-radius: 50%; border: 4px solid #6366f1;" />
+  
+  <br>
+  <p><i>"Building intelligent solutions, one algorithm at a time"</i></p>
+</div>
 
-<!-- <div align="center">
+## 📫 Connect With Me
+
+<div align="center">
   <a href="https://github.com/stealthemoon0331">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://twitter.com/stealthemoon031">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-  <!-- <a href="https://linkedin.com/in/yourusername">
+  <a href="https://www.linkedin.com/in/tatsuya-kuroda-84423b389/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /> -->
+  <a href="tatsuyakuroda60@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-</div> -->
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&style=for-the-badge&color=blue" alt="Profile Views" />
-  <p><i>"Building the future, one block at a time"</i></p>
 </div>
+
+
+
