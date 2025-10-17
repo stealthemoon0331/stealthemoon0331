@@ -10,7 +10,7 @@
 
 
 **AI-Focused Full Stack Developer** with 7+ years of experience building scalable, data-driven web and mobile
-applications. Skilled in React, Node.js, Django, and GraphQL, with hands-on expertise integrating AI/ML models using
+applications. Skilled in React, Node.js, Django, Laravel, and GraphQL, with hands-on expertise integrating AI/ML models using
 TensorFlow and PyTorch. Delivered intelligent features like personalized recommendation engines that boosted engagement by
 25%. Experienced in developing cross-platform mobile apps with React Native and Flutter. Delivered intelligent features such as
 personalized recommendation engines that boosted engagement by 26%. Passionate about clean architecture, mentoring teams, and bringing cutting-edge technologies—AI, cloud, and decentralized systems—into practical, user-centric solutions.
@@ -22,11 +22,10 @@ personalized recommendation engines that boosted engagement by 26%. Passionate a
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
 </div>
-
-![AI ML Tech Stack](https://github.com/stealthemoon0331/github-landing/assets/placeholder/ai-ml-stack.png)
 
 ### **AI & Machine Learning**
 <div align="center">
@@ -51,9 +50,16 @@ personalized recommendation engines that boosted engagement by 26%. Passionate a
 - **UI Libraries**: Material-UI, Chakra UI, Ant Design, Mantine
 
 ### **Backend Development**
-- **Languages**: Python, Node.js, Go, Rust, TypeScript
-- **Frameworks**: FastAPI, Django, Flask, Express.js, NestJS, Spring Boot
-- **Databases**: PostgreSQL, MongoDB, Redis, Vector Databases (Pinecone, Weaviate)
+<div align="center">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
+</div>
+
+- **Languages**: PHP, Python, Node.js, Go, Rust, TypeScript
+- **Frameworks**: Laravel, FastAPI, Django, Flask, Express.js, NestJS, Spring Boot
+- **Databases**: MySQL, PostgreSQL, MongoDB, Redis, Vector Databases (Pinecone, Weaviate)
 - **APIs**: REST, GraphQL, WebSocket, gRPC
 - **AI Services**: OpenAI, Anthropic, Google AI, Azure Cognitive Services
 
@@ -97,6 +103,18 @@ personalized recommendation engines that boosted engagement by 26%. Passionate a
 - **Time Series Forecasting**: Created ML models for financial market prediction and demand forecasting
 - **Computer Vision API**: Developed scalable image recognition service with RESTful API integration
 
+### **Laravel Web Applications**
+<div align="center">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+</div>
+
+- **E-commerce Platform**: Built scalable Laravel-based marketplace with AI-powered product recommendations
+- **CRM System**: Developed custom customer relationship management with automated lead scoring using ML
+- **API Gateway**: Created Laravel-based microservices API with AI integration for intelligent routing
+- **Content Management**: Built AI-enhanced CMS with automated content tagging and SEO optimization
+
 ### **Mobile AI Applications**
 <div align="center">
   <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
@@ -137,6 +155,32 @@ response = client.chat.completions.create(
 )
 ```
 
+```php
+// Laravel AI Integration
+<?php
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use OpenAI\Laravel\Facades\OpenAI;
+
+class AIController extends Controller
+{
+    public function generateContent(Request $request)
+    {
+        $response = OpenAI::chat()->create([
+            'model' => 'gpt-4',
+            'messages' => [
+                ['role' => 'user', 'content' => $request->input('prompt')]
+            ]
+        ]);
+        
+        return response()->json([
+            'content' => $response->choices[0]->message->content
+        ]);
+    }
+}
+```
+
 ```javascript
 // React Native AI Integration
 import { TensorFlowLite } from '@tensorflow/tfjs-react-native';
@@ -163,16 +207,6 @@ export function ChatInterface() {
     </div>
   );
 }
-
-// Backend AI API
-app.post('/api/generate-content', async (req, res) => {
-  const { prompt } = req.body;
-  const response = await openai.chat.completions.create({
-    model: "gpt-4",
-    messages: [{ role: "user", content: prompt }]
-  });
-  res.json({ content: response.choices[0].message.content });
-});
 ```
 
 ## 📊 Key Achievements
@@ -239,6 +273,7 @@ app.post('/api/generate-content', async (req, res) => {
 - App Store Deployment: ⭐⭐⭐⭐
 
 ### **Backend Development**
+- PHP/Laravel: ⭐⭐⭐⭐⭐
 - Python: ⭐⭐⭐⭐⭐
 - Node.js: ⭐⭐⭐⭐⭐
 - API Development: ⭐⭐⭐⭐⭐
@@ -251,6 +286,7 @@ app.post('/api/generate-content', async (req, res) => {
 - **Computer Vision**: Object detection, image classification, facial recognition, AR/VR
 - **Natural Language Processing**: Chatbots, sentiment analysis, text generation, translation
 - **Machine Learning**: Predictive modeling, recommendation systems, time series forecasting
+- **Laravel Development**: Enterprise applications, API development, microservices architecture
 - **Mobile AI**: On-device ML, TensorFlow Lite, Core ML, edge computing
 - **AI Integration**: API development, model deployment, real-time inference
 - **MLOps**: Model versioning, monitoring, CI/CD for ML pipelines
@@ -261,6 +297,7 @@ app.post('/api/generate-content', async (req, res) => {
 - **TensorFlow Developer Certificate** (Google)
 - **AWS Machine Learning Specialty** (Amazon)
 - **Microsoft Azure AI Engineer Associate**
+- **Laravel Certified Developer** (Laravel LLC)
 - **Deep Learning Specialization** (DeepLearning.AI)
 - **Natural Language Processing** (Stanford)
 
